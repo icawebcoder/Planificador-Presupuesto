@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor Presupuesto</title>
+</head>
+
+<body>
+  <app-movimientos class="containerResume" [presupuestoTotal]="getPresupuestoTotal()" [ingresoTotal]="getIngresoTotal()"
+    [gastoTotal]="getGastoTotal()" [porcentajeTotal]="getPorcentaje()" />
+  <app-insertar class="containerSelect" />
+  <div class="containerMovimientos">
+    <app-ingresos class="containerMovimientos" />
+    <app-gastos class="containerMovimientos" [ingresoTotal]="getIngresoTotal()" />
+  </div>
+</body>
+
+</html>

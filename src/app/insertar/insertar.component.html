@@ -1,0 +1,13 @@
+<form action="" #f="ngForm" (ngSubmit)="f.form.valid && agregarValor()">
+    <select name="Valor" id="insercion" [ngClass]="{'selectorRojo': tipo === 'gastos',
+    'selector': tipo === 'ingresos'}" (change)="tipoOperacion($event)">
+        <option value="ingresos" selected>Ingreso</option>
+        <option value="gastos">Gastos</option>
+    </select>
+    <input type="text" name="descripcion" placeholder="Descripción" [ngClass]="{'inputGasto': tipo === 'gastos',
+    'inputIngreso': tipo === 'ingresos'}" [(ngModel)]="descripcion" required>
+    <input type="number" name="valor" placeholder="Valor" [ngClass]="{'inputGasto': tipo === 'gastos',
+    'inputIngreso': tipo === 'ingresos'}" [(ngModel)]="valor" required>
+    <button type="submit" [ngClass]="{'botonGasto': tipo === 'gastos',
+    'botonSelector': tipo === 'ingresos'}">Registrar</button>
+</form>

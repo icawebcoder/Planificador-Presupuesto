@@ -1,0 +1,10 @@
+<div class="container">
+    <p class="texto">Ingresos</p>
+    @for(ingreso of ingresos; track ingreso){
+    <li class="lista">
+        <span>{{ingreso.descripcion}}</span>
+        <span>{{ingreso.valor | currency: 'EU': '€': '1.2-2'}}</span>
+        <button (click)="eliminarIngreso(ingreso)">Eliminar</button>
+    </li>
+    }
+</div>

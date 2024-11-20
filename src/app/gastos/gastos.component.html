@@ -1,0 +1,13 @@
+<div class="container">
+    <p class="texto">Gastos</p>
+    @for(gasto of gastos; track gasto){
+    <li class="lista">
+        <span>{{gasto.descripcion}}</span>
+        <div class="containerPor">
+            <span class="importe">{{gasto.valor | currency: 'EU': '€': '1.2-2'}}</span>
+            <span class="porcentaje">{{calcularPorcentaje(gasto) | percent}}</span>
+        </div>
+        <button (click)="eliminarGasto(gasto)">Eliminar</button>
+    </li>
+    }
+</div>

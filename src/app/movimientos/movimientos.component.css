@@ -1,0 +1,46 @@
+.textoPrincipal {
+    color: orange;
+    font-size: 1.8rem;
+}
+
+.cantidadPrincipal {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 1.2rem;
+}
+
+.containers {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.containerCantidad {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerGastos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.textoResume {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.textoPorcentaje{
+    font-size: 1.1rem;
+    background-color: red;
+    color: black;
+    padding-inline: 0.5rem;
+    border-radius: 5px;
+}

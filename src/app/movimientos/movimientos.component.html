@@ -1,0 +1,15 @@
+<h2 class="textoPrincipal">Presupuesto disponible</h2>
+<p class="cantidadPrincipal">{{presupuestoTotal | currency: 'EU': '€': '1.2-2'}}</p>
+<div class="containers">
+    <div class="containerCantidad">
+        <p class="textoResume">Ingresos</p>
+        <p class="textoResume">{{ingresoTotal | currency: 'EU': '€': '1.2-2'}}</p>
+    </div>
+    <div class="containerCantidad">
+        <p class="textoResume">Gastos</p>
+        <div class="containerGastos">
+            <p class="textoResume">{{gastoTotal | currency: 'EU': '€': '1.2-2'}}</p>
+            <p class="textoPorcentaje">{{porcentajeTotal | percent}}</p>
+        </div>
+    </div>
+</div>
